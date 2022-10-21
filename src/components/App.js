@@ -1,8 +1,27 @@
-import { Card } from 'primereact/card'
+import React from 'react'
+import Accordion from './Accordion'
+
+
+const itens= [
+  {
+    titulo: "Java",
+    conteudo: "Linguagem compilada e interpretada"
+  },
+  {
+    titulo: "Python",
+    conteudo: "Linguagem interpretada e dinamicamente tipada"
+  },
+  {
+    titulo: "Javascript",
+    conteudo: "Linguagem interpretada. Executa do lado do cliente e do lado do servidor também" 
+  }
+]
+
 const App = () => {
   return (
-    <Card>App2</Card>
+    <div>
+      <Accordion itens={itens}/>
+    </div>
   )
 }
-
 export default App
